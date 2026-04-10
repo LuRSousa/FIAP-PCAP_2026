@@ -3,12 +3,12 @@
 num1 = float(input("Digite o primeiro número: "))
 num2 = float(input("Digite o segundo número: "))
 
-def comparar_nums(num1, num2):
-    if(num1 > num2):
-        print(f"{num1} é maior que {num2}.")
-    elif(num2 > num1):
-        print(f"{num2} é maior que {num1}.")
+def comparar_nums(n1, n2):
+    if(n1 > n2):
+        print(f"{n1} é maior que {n2}.")
+    elif(n2 > n1):
+        print(f"{n2} é maior que {n1}.")
     else:
-        print(f"{num1} e {num2} são iguais.")
+        print(f"{n1} e {n2} são iguais.")
 
 comparar_nums(num1, num2)
