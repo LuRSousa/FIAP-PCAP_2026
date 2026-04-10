@@ -5,10 +5,10 @@ print()
 
 num = int(input("Digite um número para verificação: "))
 
-def verificador_par(num):
+def verificar_par(num):
     return num % 2 == 0
 
-resultado = verificador_par(num)
+resultado = verificar_par(num)
 
 if(resultado):
     print(f"O número {num} é par!")

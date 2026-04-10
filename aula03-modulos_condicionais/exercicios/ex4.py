@@ -10,10 +10,10 @@ nota2 = float(input("Digite sua segunda nota: "))
 nota3 = float(input("Digite sua terceira nota: "))
 nota4 = float(input("Digite sua quarta nota: "))
 
-def calculando_media(n1, n2, n3, n4):
+def calcular_media(n1, n2, n3, n4):
     return round((n1 + n2 + n3 + n4) / 4 ,2)
 
-media = calculando_media(nota1, nota2, nota3, nota4)
+media = calcular_media(nota1, nota2, nota3, nota4)
 
 if(media >= 7):
     print(f"Média: {media}, Status: Aprovado!")
