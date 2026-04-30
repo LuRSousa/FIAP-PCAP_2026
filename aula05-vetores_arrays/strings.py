@@ -12,3 +12,6 @@ print()
 
 for i in range(tamanho_str):
     print(i, texto[i])
+
+for c in texto:
+    print(c)
