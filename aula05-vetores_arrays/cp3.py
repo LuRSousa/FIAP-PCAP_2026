@@ -38,7 +38,7 @@ for i in range(len(temperaturas)):
     tot_crit.append(crit)
 
     print(f"Sala {i+1}")
-    print(f"Media: {soma_temp/4}")
+    print(f"Media: {soma_temp/len(temperaturas[i])}")
     print(f"Registros criticos: {crit}\n")
 
 maior_crit = max(tot_crit)
