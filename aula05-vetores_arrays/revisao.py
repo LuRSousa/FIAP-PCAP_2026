@@ -7,10 +7,7 @@ status = [
 ]
  
 def validador(stat):
-    if stat >= 200 and stat <= 299:
-        return 1
-    else:
-        return 0
+     return stat >= 200 and stat <= 299
  
 endpoints_criticos = []
 endpoints_estaveis = []
