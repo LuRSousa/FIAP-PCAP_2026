@@ -1,7 +1,7 @@
 #Pegar CSV com lista de email do dominio aluno da fiap (ALUN, FIAP, etc)
 #Separar username do domain de todos e contar quanto tem de cada um em uma tupla
 
-emails = [
+emails = (
     "ana.silva@alura.com.br",
     "bruno.souza@fiap.com.br",
     "carlos.oliveira@alura.com.br",
@@ -53,16 +53,19 @@ emails = [
     "murilo.queiroz@alura.com.br",
     "renata.xavier@fiap.com.br",
     "sergio.amorim@alura.com.br"
-]
+)
 
 usernames = []
 domains = []
 
 for email in emails:
-    usernames.append(email.split("@")[0])
+    #usernames.append(email.split("@")[0])
+    nome = email.split("@")[0].split(".")[0]
+    sobrenome = email.split("@")[0].split(".")[1]
+    
+    usernames.append(nome + " " + sobrenome)
     domains.append(email.split("@")[1])
 
-dict_usernames = dict()
 dict_domains = dict()
 
 for d in domains:
@@ -74,8 +77,11 @@ for d in domains:
 print(dict_domains)
 print()
 
-users = []
-for i in range(len(emails)):
-    dict_usernames[usernames[i]] = domains[i]
-    
-print(dict_usernames)
+usernames = tuple(usernames)
+print(usernames)
+print()
+
+#usernames[0], usernames[-1] = usernames[-1], usernames[0]
+
+#print(usernames)
+#print()
